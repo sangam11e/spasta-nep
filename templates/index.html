@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{%block content%}
+  <div class="container">
+    <form method="POST">
+        <fieldset class="form-group">
+          <div class="form-group">
+            {{form.texts}}
+          </div>
+          <div class="form-group">
+            {{form.submits}}
+          </div>
+        </fieldset>
+    </form>
+  </div>
+{%endblock%}

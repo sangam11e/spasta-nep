@@ -57,8 +57,8 @@ def getCorrectWord(word):
             min_dis = cur_dis
             correct_word = s
     return correct_word
-def processInput():
-    inputtext=input('Enter text')   
+def processInput(arg1):
+    inputtext=arg1
     words=inputtext.strip().split()
     output=''
      
@@ -90,7 +90,7 @@ def testing():
         data2=request.get_json(force=True)
         print(data2['page_data'])
         text21=data2['page_data']
-       
+        processInput(text21)
         return jsonify(data2['page_data'])
 
 
